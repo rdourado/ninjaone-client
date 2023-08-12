@@ -1,5 +1,5 @@
 import { render as testingLibraryRender } from '@testing-library/react';
-import { ThemeProvider } from '../src/ThemeProvider';
+import { ThemeProvider } from '../src/layout/ThemeProvider';
 
 export function render(children: React.ReactNode) {
   const { rerender, ...others } = testingLibraryRender(<ThemeProvider>{children}</ThemeProvider>);
